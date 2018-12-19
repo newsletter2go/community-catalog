@@ -97,6 +97,8 @@ services:
     environment:
       RABBITMQ_ERLANG_COOKIE: awx-erlang-cookie
       RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST}
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD}
     stdin_open: true
     tty: true
 {{- end }}
